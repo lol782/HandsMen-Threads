@@ -8,12 +8,12 @@
 
 HandsMen-Threads/  
 │  
-├── screemshots/                  # Project screenshots  
-├── source code/                  # Apex triggers and related code  
+├── screemshots/                   Project screenshots  
+├── source code/                   Apex triggers and related code  
 │   ├── stock_deduction_trigger.trigger  
 │   └── update_total_trigger.trigger  
 ├── HandsMen Threads project documentation.docx  
-└── readme.md                     # Project README  
+└── readme.md                      Project README  
 ---
 
 ## ⚙️ Features

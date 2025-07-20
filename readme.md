@@ -8,12 +8,13 @@
 
 HandsMen-Threads/  
 │  
-├── screemshots/                   Project screenshots  
-├── source code/                   Apex triggers and related code  
+├── screemshots/                  # Project screenshots  
+├── source code/                  # Apex triggers and related code  
 │   ├── stock_deduction_trigger.trigger  
 │   └── update_total_trigger.trigger  
 ├── HandsMen Threads project documentation.docx  
-└── readme.md                      Project README  
+└── readme.md                     # Project README  
+
 ---
 
 ## ⚙️ Features
@@ -28,50 +29,50 @@ HandsMen-Threads/
 
 ### 1. `stock_deduction_trigger`
 **Purpose**:  
-This trigger handles the automatic deduction of stock from the inventory whenever a new transaction or order is created. It ensures the inventory is always up to date without any manual intervention.
+Handles automatic deduction of stock from the inventory whenever a transaction or order is created.
 
 **Functionality**:
-- Runs after an insert operation on the transaction object.
-- Deducts the quantity ordered from the current stock.
-- Prevents stock from going negative.
+- Triggered after insert operations on the transaction object.
+- Deducts the ordered quantity from available stock.
+- Ensures stock does not go negative.
 
 ---
 
 ### 2. `update_total_trigger`
 **Purpose**:  
-This trigger calculates and updates the total value of inventory for each product after every stock update.
+Calculates and updates the total inventory value for each product after stock changes.
 
 **Functionality**:
-- Runs after an update or insert on the stock object.
-- Multiplies the current stock quantity by the unit price to compute the total value.
-- Updates the `Total_Value__c` field of the product.
+- Triggered after insert or update on the stock object.
+- Multiplies stock quantity by unit price to compute `Total_Value__c`.
+- Keeps the total value field updated in real time.
 
 ---
 
 ## 📸 Screenshots
 
-Refer to the `screemshots` folder for UI and workflow visuals.
+Find all relevant UI and setup screenshots in the `screemshots/` folder.
 
 ---
 
 ## 📄 Documentation
 
-Detailed explanation of project requirements, implementation details, and logic flow is available in the file:  
+For complete functional explanation and implementation details, refer to the file:  
 **`HandsMen Threads project documentation.docx`**
 
 ---
 
 ## 📌 Requirements
 
-- Salesforce Developer Org
-- Basic understanding of Apex Triggers
-- Admin access to create objects and fields
+- Salesforce Developer Edition
+- Basic knowledge of Apex Triggers and Salesforce Objects
+- Admin permissions to modify object schema
 
 ---
 
 ## 🧑‍💻 Author
 
-Rahul Koranga  
+**Rahul Koranga**  
 📧 rahulkoranga30@gmail.com  
 📍 Clement Town, Dehradun
 
